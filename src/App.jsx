@@ -405,17 +405,18 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-6 mb-16 flex flex-col items-center text-center">
           <span className="text-teal-600 font-black uppercase tracking-widest text-xs">Project Showcase</span>
           <h3 className="text-4xl md:text-5xl font-black mt-4">Our Work Gallery</h3>
-          <p className="text-slate-500 mt-4 max-w-2xl">Explore our portfolio of completed projects. Drop new images into the gallery folder to automatically update this slider.</p>
+          <p className="text-slate-500 mt-4 max-w-2xl">Explore our portfolio of completed projects.</p>
         </div>
-        
+
         {galleryImages.length > 0 ? (
           <div className="relative max-w-7xl mx-auto px-6 group">
             <div id="gallery-slider" className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 pt-4" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               {/* Note: Webkit scrollbar hiding can be done in CSS, but inline style works for Firefox/IE. */}
-              <style dangerouslySetInnerHTML={{__html: `
+              <style dangerouslySetInnerHTML={{
+                __html: `
                 #gallery-slider::-webkit-scrollbar { display: none; }
               `}} />
-              
+
               {galleryImages.map((src, idx) => (
                 <div key={idx} className="flex-none w-[85vw] md:w-[600px] snap-center rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 bg-slate-200 flex items-center justify-center transform transition-all">
                   <div className="aspect-[16/10] w-full relative">
@@ -424,7 +425,7 @@ const App = () => {
                 </div>
               ))}
             </div>
-            
+
             {/* Scroll Buttons */}
             <button onClick={() => document.getElementById('gallery-slider').scrollBy({ left: -600, behavior: 'smooth' })} className="absolute top-1/2 -translate-y-1/2 left-10 w-16 h-16 bg-white/95 backdrop-blur text-slate-800 rounded-full shadow-2xl items-center justify-center pointer-events-auto hidden md:flex transition-all hover:bg-teal-500 hover:text-white hover:scale-110 z-10 border border-slate-100">
               <ChevronLeft className="w-8 h-8 ml-[-2px]" />
@@ -468,7 +469,10 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="bg-white rounded-[2.5rem] shadow-2xl p-4 overflow-x-auto">
+              <div id="savings-table-container" className="bg-white rounded-[2.5rem] shadow-2xl p-4 overflow-x-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                <style dangerouslySetInnerHTML={{__html: `
+                  #savings-table-container::-webkit-scrollbar { display: none; }
+                `}} />
                 <table className="w-full text-left text-slate-900 min-w-[500px]">
                   <thead>
                     <tr className="border-b border-slate-100">

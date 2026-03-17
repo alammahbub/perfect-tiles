@@ -1,16 +1,85 @@
-# React + Vite
+# Perfect Concrete Products
+![Perfect Concrete Hero](src/assets/gallery/paving_stones.jpg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance, and visually stunning landing page for **Perfect Concrete Products**, a leading manufacturer of premium interlocking pavers, wall blocks, and theme-based concrete tiles. Built from the ground up to showcase exactly what makes their hydraulic-pressure products the industry standard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Dynamic Tile Rendering Engine**
+  Instead of using static images, the product catalog uses a custom-built, lightweight SVG engine that mathematically draws top-down geometric representations of every single paver style (e.g., Century Button, Shapla, Grass Parking, Double Interlocking, Hexagonal) perfectly accurately.
+- **Auto-populating Project Showcase Gallery**
+  A highly responsive, scroll-snapping slider that automatically indexes and displays any images dropped into the `src/assets/gallery/` folder without requiring a single line of code to be updated. Supported formats: `.jpg, .png, .webp, .svg`.
+- **Cost-Effective Analysis**
+  A beautifully styled, interactive data table comparing the savings and spatial advantages of Perfect Concrete hollow blocks against traditional brick walls.
+- **Modern & Premium Design Aesthetic**
+  Leverages deep slate and vibrant teal color palettes, smooth hover micro-animations, glassmorphism overlays, and robust typography to exude a premium manufacturing brand identity.
+- **Fully Responsive**
+  Flawless layout behavior across massive desktop monitors down to mobile touchscreen devices, complete with touch-swipe slider support and clean mobile navigation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework:** React 19 (via Vite 8)
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
+- **Module Bundler:** Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Getting Started
+
+To run this project locally, ensure you have **Node.js** and **Yarn** installed on your machine.
+
+### 1. Clone the repository
+\`\`\`bash
+git clone https://github.com/your-username/perfect-tiles-website.git
+cd perfect-tiles-website
+\`\`\`
+
+### 2. Install dependencies
+\`\`\`bash
+yarn install
+\`\`\`
+
+### 3. Start the development server
+\`\`\`bash
+yarn dev
+\`\`\`
+
+The application will be running at `http://localhost:5173/`.
+
+### 4. Build for Production
+\`\`\`bash
+yarn build
+\`\`\`
+This will generate optimized, minified static files inside a `dist/` directory, ready to be deployed to Vercel, Netlify, GitHub Pages, or any standard web server.
+
+---
+
+## 📂 Project Structure highlights
+
+\`\`\`
+├── public/                 # Static assets like favicons
+├── src/                    
+│   ├── assets/             # Images and global files
+│   │   ├── gallery/        # Drop new gallery images here to auto-update the slider!
+│   ├── App.jsx             # Main application and component logic
+│   ├── index.css           # Global entry styles and Tailwind v4 imports
+│   └── main.jsx            # React root injection point
+├── package.json            # Project dependencies and scrips
+├── vite.config.js          # Vite and Tailwind compiler configurations
+└── README.md
+\`\`\`
+
+---
+
+## 📧 Contact Information
+
+**Brand:** Perfect Concrete Products  
+**Unit 1:** Gabtoli Beribadh, Mirpur, Dhaka.  
+**Unit 2:** Bakchar, Singair, Manikganj.  
+**Phone:** +88 01731 403 368 / +88 01743 673 648  
+**Email:** mamunsobhan@gmail.com 
+
+All rights reserved © 2024 Perfect Concrete Products.
