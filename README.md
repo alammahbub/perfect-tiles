@@ -32,34 +32,41 @@ A modern, high-performance, and visually stunning landing page for **Perfect Con
 To run this project locally, ensure you have **Node.js** and **Yarn** installed on your machine.
 
 ### 1. Clone the repository
-\`\`\`bash
+```bash
 git clone https://github.com/your-username/perfect-tiles-website.git
 cd perfect-tiles-website
-\`\`\`
+```
 
 ### 2. Install dependencies
-\`\`\`bash
+```bash
 yarn install
-\`\`\`
+```
 
 ### 3. Start the development server
-\`\`\`bash
+```bash
 yarn dev
-\`\`\`
+```
 
 The application will be running at `http://localhost:5173/`.
 
 ### 4. Build for Production
-\`\`\`bash
+```bash
 yarn build
-\`\`\`
-This will generate optimized, minified static files inside a `dist/` directory, ready to be deployed to Vercel, Netlify, GitHub Pages, or any standard web server.
+```
+This will generate optimized, minified static files inside a `dist/` directory.
+
+### 5. Deploying to PHP/Apache
+The project is pre-configured with `base: './'` and an `.htaccess` file for seamless deployment on standard PHP/Apache hosting environments.
+
+1. Run the build command as shown above.
+2. Upload the entire content of the **`dist/`** folder to your server's root (e.g., `public_html`).
+3. The `.htaccess` file will handle routing and ensure assets load correctly even if installed in a subdirectory.
 
 ---
 
 ## 📂 Project Structure highlights
 
-\`\`\`
+```
 ├── public/                 # Static assets like favicons
 ├── src/                    
 │   ├── assets/             # Images and global files
@@ -70,7 +77,7 @@ This will generate optimized, minified static files inside a `dist/` directory, 
 ├── package.json            # Project dependencies and scrips
 ├── vite.config.js          # Vite and Tailwind compiler configurations
 └── README.md
-\`\`\`
+```
 
 ---
 
